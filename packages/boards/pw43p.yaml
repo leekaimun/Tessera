@@ -157,34 +157,30 @@ display:
     vsync_back_porch: 30
     vsync_front_porch: 18
 
-    pixel_mode: 18bit
+    pixel_mode: 16bit
+    byte_order: little_endian
     color_order: RGB
     invert_colors: false
 
     # Flat list is deliberately used so ESPHome maps these exactly as physical
     # RGB D0..D15, matching the supplier firmware rather than re-grouping colors.
     data_pins:
-      red:
-        - GPIO46
-        - GPIO3
-        - GPIO8
-        - GPIO18
-        - GPIO17
-
-      green:
-        - GPIO14
-        - GPIO13
-        - GPIO12
-        - GPIO11
-        - GPIO10
-        - GPIO9
-
-      blue:
-        - GPIO5
-        - GPIO45
-        - GPIO48
-        - GPIO47
-        - GPIO21
+      - GPIO5
+      - GPIO45
+      - GPIO48
+      - GPIO47
+      - GPIO21
+      - GPIO14
+      - GPIO13
+      - GPIO12
+      - GPIO11
+      - GPIO10
+      - GPIO9
+      - GPIO46
+      - GPIO3
+      - GPIO8
+      - GPIO18
+      - GPIO17
 
     # PortWorld's external ST7701S table reconstructed from libboard_bsp.a.
     # ESPHome's named ST7701S model runs its base table first; the commands below
