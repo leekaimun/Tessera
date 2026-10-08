@@ -143,3 +143,9 @@ waveshare5:
   name: Waveshare
   model: ESP32-S3-Touch-LCD-5
   status: new
+
+pw43p:
+  file: pw43p.yaml
+  name: PortWorld
+  model: YC-SM43P
+  status: experimental
