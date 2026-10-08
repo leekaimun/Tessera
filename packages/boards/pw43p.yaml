@@ -165,26 +165,26 @@ display:
     # RGB D0..D15, matching the supplier firmware rather than re-grouping colors.
     data_pins:
       red:
-	- GPIO46
-	- GPIO3
-	- GPIO8
-	- GPIO18
-	- GPIO17
+        - GPIO46
+        - GPIO3
+        - GPIO8
+        - GPIO18
+        - GPIO17
 
       green:
-	- GPIO14
-	- GPIO13
-	- GPIO12
-	- GPIO11
-	- GPIO10
-	- GPIO9
+        - GPIO14
+        - GPIO13
+        - GPIO12
+        - GPIO11
+        - GPIO10
+        - GPIO9
 
       blue:
-	- GPIO5
-	- GPIO45
-	- GPIO48
-	- GPIO47
-	- GPIO21
+        - GPIO5
+        - GPIO45
+        - GPIO48
+        - GPIO47
+        - GPIO21
 
     # PortWorld's external ST7701S table reconstructed from libboard_bsp.a.
     # ESPHome's named ST7701S model runs its base table first; the commands below
